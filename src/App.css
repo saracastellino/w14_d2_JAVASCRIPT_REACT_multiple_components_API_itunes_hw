@@ -1,5 +1,5 @@
 .App {
-  font: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -8,14 +8,39 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin-top: 5em;
-  margin-bottom: 5em;
 }
 
-body{
-  margin-top: 5em;
+body {
   margin-bottom: 5em;
-  background-image:url("image.jpg");
+  background-image:url("bgimage.jpg");
   background-size: cover;
 }
 
+h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 6em;
+  font-style: oblique;
+  color: crimson;
+  font-weight: 800;
+}
+
+h4 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5em;
+  font-style: oblique;
+  color: chartreuse ;
+  font-weight: 700;
+}
+
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s; 
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(3); 
+}

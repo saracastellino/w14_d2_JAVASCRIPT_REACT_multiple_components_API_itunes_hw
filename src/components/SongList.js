@@ -4,19 +4,18 @@ import Song from './Song';
 
 const SongList = (props) => {
     const songList = props.songs.map (
-        song => {
-            return (
+        (song, index) => {
+            return ( 
             <Song artist={song['im:artist'].label}
             key={song.id.attributes['im:id']}>
-                {song['im:name'].label}
-            </Song>
+                {index+1 + ". " + song['im:name'].label}
+            </Song> 
          )
      });
-     
     
     return (
         <>
-        <h2>SONG LIST</h2>
+        <h2 class="zoom">SONG LIST</h2>
         {songList}
         </>
       )
