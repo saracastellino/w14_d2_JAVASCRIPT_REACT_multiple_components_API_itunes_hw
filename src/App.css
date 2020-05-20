@@ -6,14 +6,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 2vmin);
   color: white;
+  background-image:url("bgimage.jpg");
+  position: relative;
+  z-index: 1;
 }
 
 body {
   margin-bottom: 5em;
-  background-image:url("bgimage.jpg");
-  background-size: cover;
+  background:rgba(161, 19, 255, 0.6);
+  /* background-size: cover;   */
 }
 
 h1 {
@@ -24,9 +27,17 @@ h1 {
   font-weight: 800;
 }
 
-h4 {
+h2 {
   font-family: 'Fredoka One', cursive;
   font-size: 1.5em;
+  font-style: oblique;
+  color: cyan ;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
   font-style: oblique;
   color: chartreuse ;
   font-weight: 700;
@@ -34,10 +45,10 @@ h4 {
 
 
 .zoom {
-  padding: 50px;
+  padding-bottom: 150px;
   transition: transform .2s; 
-  width: 200px;
-  height: 50px;
+  width: 300px;
+  height: 100px;
   margin: 0 auto;
 }
 
